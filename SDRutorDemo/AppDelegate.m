@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SDRutor.h"
+#import "SDRouter.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation {
     
-    [[SDRutor shareRutor] rutor:url];
+    [[SDRouter shareRutor] rutor:url];
     
     return YES;
 }

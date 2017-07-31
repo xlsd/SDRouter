@@ -14,8 +14,6 @@
 		E10428DB1F1AF88900A02D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10428DA1F1AF88900A02D47 /* Assets.xcassets */; };
 		E10428DE1F1AF88900A02D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10428DC1F1AF88900A02D47 /* LaunchScreen.storyboard */; };
 		E10428F61F1AF89C00A02D47 /* SDRoutorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428E71F1AF89C00A02D47 /* SDRoutorUtil.m */; };
-		E10428F71F1AF89C00A02D47 /* SDRutor.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428E91F1AF89C00A02D47 /* SDRutor.m */; };
-		E10428F81F1AF89C00A02D47 /* SDRutorContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428EB1F1AF89C00A02D47 /* SDRutorContext.m */; };
 		E10428F91F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428ED1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m */; };
 		E10428FA1F1AF89C00A02D47 /* SDURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428EF1F1AF89C00A02D47 /* SDURLParser.m */; };
 		E10428FB1F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428F11F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m */; };
@@ -26,6 +24,8 @@
 		E10429091F1AF8B400A02D47 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10429051F1AF8B300A02D47 /* TwoViewController.m */; };
 		E104290B1F1AF8BD00A02D47 /* source.html in Resources */ = {isa = PBXBuildFile; fileRef = E104290A1F1AF8BD00A02D47 /* source.html */; };
 		E14740641F2EC9900009E04A /* hello1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E14740631F2EC9900009E04A /* hello1.gif */; };
+		E14740671F2EDA320009E04A /* SDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740661F2EDA320009E04A /* SDRouter.m */; };
+		E147406A1F2EDA930009E04A /* SDRouterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740691F2EDA930009E04A /* SDRouterContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +41,6 @@
 		E10428DF1F1AF88900A02D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10428E61F1AF89C00A02D47 /* SDRoutorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRoutorUtil.h; sourceTree = "<group>"; };
 		E10428E71F1AF89C00A02D47 /* SDRoutorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRoutorUtil.m; sourceTree = "<group>"; };
-		E10428E81F1AF89C00A02D47 /* SDRutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRutor.h; sourceTree = "<group>"; };
-		E10428E91F1AF89C00A02D47 /* SDRutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRutor.m; sourceTree = "<group>"; };
-		E10428EA1F1AF89C00A02D47 /* SDRutorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRutorContext.h; sourceTree = "<group>"; };
-		E10428EB1F1AF89C00A02D47 /* SDRutorContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRutorContext.m; sourceTree = "<group>"; };
 		E10428EC1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDUIStackLifeCircleAction.h; sourceTree = "<group>"; };
 		E10428ED1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDUIStackLifeCircleAction.m; sourceTree = "<group>"; };
 		E10428EE1F1AF89C00A02D47 /* SDURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLParser.h; sourceTree = "<group>"; };
@@ -63,6 +59,10 @@
 		E10429051F1AF8B300A02D47 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		E104290A1F1AF8BD00A02D47 /* source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = source.html; sourceTree = "<group>"; };
 		E14740631F2EC9900009E04A /* hello1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello1.gif; sourceTree = "<group>"; };
+		E14740651F2EDA320009E04A /* SDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRouter.h; sourceTree = "<group>"; };
+		E14740661F2EDA320009E04A /* SDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRouter.m; sourceTree = "<group>"; };
+		E14740681F2EDA930009E04A /* SDRouterContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRouterContext.h; sourceTree = "<group>"; };
+		E14740691F2EDA930009E04A /* SDRouterContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRouterContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +133,10 @@
 			children = (
 				E10428E61F1AF89C00A02D47 /* SDRoutorUtil.h */,
 				E10428E71F1AF89C00A02D47 /* SDRoutorUtil.m */,
-				E10428E81F1AF89C00A02D47 /* SDRutor.h */,
-				E10428E91F1AF89C00A02D47 /* SDRutor.m */,
-				E10428EA1F1AF89C00A02D47 /* SDRutorContext.h */,
-				E10428EB1F1AF89C00A02D47 /* SDRutorContext.m */,
+				E14740651F2EDA320009E04A /* SDRouter.h */,
+				E14740661F2EDA320009E04A /* SDRouter.m */,
+				E14740681F2EDA930009E04A /* SDRouterContext.h */,
+				E14740691F2EDA930009E04A /* SDRouterContext.m */,
 				E10428EC1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.h */,
 				E10428ED1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m */,
 				E10428EE1F1AF89C00A02D47 /* SDURLParser.h */,
@@ -237,11 +237,11 @@
 				E10428D61F1AF88900A02D47 /* ViewController.m in Sources */,
 				E10428FB1F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m in Sources */,
 				E10429061F1AF8B300A02D47 /* OneViewController.m in Sources */,
-				E10428F81F1AF89C00A02D47 /* SDRutorContext.m in Sources */,
 				E10428F91F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m in Sources */,
+				E147406A1F2EDA930009E04A /* SDRouterContext.m in Sources */,
+				E14740671F2EDA320009E04A /* SDRouter.m in Sources */,
 				E10428F61F1AF89C00A02D47 /* SDRoutorUtil.m in Sources */,
 				E10428D31F1AF88900A02D47 /* AppDelegate.m in Sources */,
-				E10428F71F1AF89C00A02D47 /* SDRutor.m in Sources */,
 				E10428D01F1AF88900A02D47 /* main.m in Sources */,
 				E10428FA1F1AF89C00A02D47 /* SDURLParser.m in Sources */,
 			);

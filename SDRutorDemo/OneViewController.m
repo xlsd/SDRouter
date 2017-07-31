@@ -7,7 +7,7 @@
 //
 
 #import "OneViewController.h"
-#import "SDRutor.h"
+#import "SDRouter.h"
 #import "SDConstant.h"
 
 @interface OneViewController ()
@@ -17,7 +17,7 @@
 @implementation OneViewController
 
 + (void)load {
-    [[SDRutor shareRutor] addPaten:OneController callback:^(SDRutorContext *context) {
+    [[SDRouter shareRutor] addPaten:OneController callback:^(SDRouterContext *context) {
         NSLog(@"优品财富: %@",context.paramters);
         OneViewController *textOneVc = [[OneViewController alloc] init];
         textOneVc.navigationItem.title = context.paramters[@"title"];

@@ -1,15 +1,14 @@
 //
-//  SDRutorContext.h
-//  MethodTest
+//  SDRouterContext.h
+//  SDRutorDemo
 //
-//  Created by xuelin on 2017/5/28.
+//  Created by as_one on 2017/7/31.
 //  Copyright © 2017年 as_one. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-@interface SDRutorContext : NSObject
+@interface SDRouterContext : NSObject
 /**
  解析出来的URL携带的参数 http://www.baidu.com?key1=value1&key2=value2
  {key1:value1, key2:value2}
@@ -31,5 +30,4 @@
  * 如果全局UI栈中有 会返回距离栈底最近的nav, 而非栈顶
  */
 @property (nonatomic, strong, readonly) UINavigationController* topNavigationController;
-
 @end

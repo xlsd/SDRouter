@@ -7,7 +7,7 @@
 //
 
 #import "TwoViewController.h"
-#import "SDRutor.h"
+#import "SDRouter.h"
 #import "SDConstant.h"
 #import "SDWebView.h"
 
@@ -18,7 +18,7 @@
 @implementation TwoViewController
 
 + (void)load {
-    [[SDRutor shareRutor] addPaten:TwoController callback:^(SDRutorContext *context) {
+    [[SDRouter shareRutor] addPaten:TwoController callback:^(SDRouterContext *context) {
         NSDictionary *dict = context.paramters;
         TwoViewController *twoVc = [TwoViewController new];
         twoVc.navigationItem.title = dict[@"title"];
@@ -35,7 +35,7 @@
     [self.view addSubview:webView];
     webView.urlBlock = ^(NSString *urlString) {
         if ([urlString rangeOfString:AppSchema].location != NSNotFound) {
-            [[SDRutor shareRutor] rutor:[NSURL URLWithString:urlString]];
+            [[SDRouter shareRutor] rutor:[NSURL URLWithString:urlString]];
         }
     };
 

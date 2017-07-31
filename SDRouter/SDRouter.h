@@ -1,19 +1,19 @@
 //
-//  SDRutor.h
-//  MethodTest
+//  SDRouter.h
+//  SDRutorDemo
 //
-//  Created by xuelin on 2017/5/27.
+//  Created by as_one on 2017/7/31.
 //  Copyright © 2017年 as_one. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "SDRutorContext.h"
+#import "SDRouterContext.h"
 #import "SDRoutorUtil.h"
 #import "SDURLParser.h"
 
-typedef void(^SDCompleteCallback)(SDRutorContext *context);
+typedef void(^SDCompleteCallback)(SDRouterContext *context);
 
-@interface SDRutor : NSObject
+@interface SDRouter : NSObject
 
 + (instancetype)shareRutor;
 

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SDRutor.h"
+#import "SDRouter.h"
 #import "SDConstant.h"
 
 @interface ViewController ()
@@ -29,7 +29,7 @@
 - (void)go {
     NSDictionary *param = @{@"title":@"as_one"};
     NSURL *url = SDURLRouteQueryLink(OneController, param);
-    [[SDRutor shareRutor] rutor:url];
+    [[SDRouter shareRutor] rutor:url];
 }
 
 

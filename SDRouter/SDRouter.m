@@ -1,23 +1,20 @@
 //
-//  SDRutor.m
-//  MethodTest
+//  SDRouter.m
+//  SDRutorDemo
 //
-//  Created by xuelin on 2017/5/27.
+//  Created by as_one on 2017/7/31.
 //  Copyright © 2017年 as_one. All rights reserved.
 //
 
-#import "SDRutor.h"
-#import "SDURLParser.h"
-
-
-@implementation SDRutor {
+#import "SDRouter.h"
+@implementation SDRouter {
     NSMutableArray<NSDictionary *> *_results;
 }
-static SDRutor *_rutor;
+static SDRouter *_rutor;
 + (instancetype)shareRutor {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _rutor = [[SDRutor alloc] init];
+        _rutor = [[SDRouter alloc] init];
     });
     return _rutor;
 }
@@ -42,7 +39,7 @@ static SDRutor *_rutor;
     SDURLParser *parser = [[SDURLParser alloc] initWithURL:paten];
     [_results enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([[obj allKeys].firstObject isEqualToString:parser.paten]) {
-            SDRutorContext *context = [[SDRutorContext alloc] init];
+            SDRouterContext *context = [[SDRouterContext alloc] init];
             context.paramters = parser.paramters;
             if ([obj allValues].firstObject) {
                 SDCompleteCallback callback = (SDCompleteCallback)[obj allValues].firstObject;
@@ -52,7 +49,4 @@ static SDRutor *_rutor;
         }
     }];
 }
-
-
-
 @end

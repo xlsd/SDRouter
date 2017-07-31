@@ -7,7 +7,7 @@
 //
 
 #import "ThreeViewController.h"
-#import "SDRutor.h"
+#import "SDRouter.h"
 #import "SDConstant.h"
 @interface ThreeViewController ()
 
@@ -16,7 +16,7 @@
 @implementation ThreeViewController
 
 + (void)load {
-    [[SDRutor shareRutor] addPaten:ThreeController callback:^(SDRutorContext *context) {
+    [[SDRouter shareRutor] addPaten:ThreeController callback:^(SDRouterContext *context) {
         NSDictionary *dict = context.paramters;
         ThreeViewController *twoVc = [ThreeViewController new];
         twoVc.navigationItem.title = dict[@"title"];

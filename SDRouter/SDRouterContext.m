@@ -1,15 +1,15 @@
 //
-//  SDRutorContext.m
-//  MethodTest
+//  SDRouterContext.m
+//  SDRutorDemo
 //
-//  Created by xuelin on 2017/5/28.
+//  Created by as_one on 2017/7/31.
 //  Copyright © 2017年 as_one. All rights reserved.
 //
 
-#import "SDRutorContext.h"
+#import "SDRouterContext.h"
 #import "SDUIStackLifeCircleAction.h"
 
-@implementation SDRutorContext
+@implementation SDRouterContext
 - (NSArray*) viewControllerStack {
     return [SDUIShareStackInstance() viewControllerStack];
 }
