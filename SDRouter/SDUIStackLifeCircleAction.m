@@ -45,7 +45,7 @@ SDUIStackLifeCircleAction* SDUIShareStackInstance() {
 }
 
 - (void) hostController:(UIViewController *)vc viewWillAppear:(BOOL)animated {
-    
+    //  移除NULL
     [_uiStack compact];
 }
 
