@@ -1,6 +1,6 @@
-# SDRutorDemo
+# SDRouterDemo
 
-SDRutor use for decoupling.use simple code bridge native to native or H5 to native by AppSchema  with parameter, like this "asone://oneController?url=http://www.baidu.com" SDRutor 可以用来在模块与模块间的解耦及通信，也可以作为H5和原生的交互、跳转、传参。
+SDRouter use for decoupling.use simple code bridge native to native or H5 to native by AppSchema  with parameter, like this "asone://oneController?url=http://www.baidu.com" SDRouter 可以用来在模块与模块间的解耦及通信，也可以作为H5和原生的交互、跳转、传参。
 
 ![image](https://github.com/giveMeHug/SDRutorDemo/blob/master/SDRutorDemo/hello1.gif)
 
@@ -12,7 +12,7 @@ SDRutor use for decoupling.use simple code bridge native to native or H5 to nati
 2.在该控制器+load方法中添加如下代码
 ```
 + (void)load {
-    [[SDRutor shareRutor] addPaten:OneController callback:^(SDRutorContext *context) {
+    [[SDRouter shareRutor] addPaten:OneController callback:^(SDRouterContext *context) {
         NSLog(@"优品财富: %@",context.paramters);
         OneViewController *textOneVc = [[OneViewController alloc] init];
         textOneVc.navigationItem.title = context.paramters[@"title"];
@@ -25,7 +25,7 @@ SDRutor use for decoupling.use simple code bridge native to native or H5 to nati
 ```
 NSDictionary *param = @{@"title":@"as_one"};
 NSURL *url = SDURLRouteQueryLink(OneController, param);
-[[SDRutor shareRutor] rutor:url];
+[[SDRouter shareRutor] rutor:url];
 ```
 
 H5跳原生带参数使用（可以参考demo）：
