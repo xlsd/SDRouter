@@ -4,7 +4,7 @@ s.name         = "SDRouter"
 s.version      = "1.0.0"
 s.ios.deployment_target = '8.0'
 s.summary      = "iOS Router lib."
-s.description  = "使用Router解耦"
+s.description  = "this lib is used to decoupling, Router is a good lib."
 s.homepage     = "https://github.com/giveMeHug/SDRouter"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author       = { "as_one" => "413890968@qq.com" }
