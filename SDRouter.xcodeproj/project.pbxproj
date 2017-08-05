@@ -7,38 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E10428D01F1AF88900A02D47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428CF1F1AF88900A02D47 /* main.m */; };
-		E10428D31F1AF88900A02D47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428D21F1AF88900A02D47 /* AppDelegate.m */; };
-		E10428D61F1AF88900A02D47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428D51F1AF88900A02D47 /* ViewController.m */; };
-		E10428D91F1AF88900A02D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10428D71F1AF88900A02D47 /* Main.storyboard */; };
-		E10428DB1F1AF88900A02D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10428DA1F1AF88900A02D47 /* Assets.xcassets */; };
-		E10428DE1F1AF88900A02D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10428DC1F1AF88900A02D47 /* LaunchScreen.storyboard */; };
 		E10428F61F1AF89C00A02D47 /* SDRoutorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428E71F1AF89C00A02D47 /* SDRoutorUtil.m */; };
 		E10428F91F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428ED1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m */; };
 		E10428FA1F1AF89C00A02D47 /* SDURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428EF1F1AF89C00A02D47 /* SDURLParser.m */; };
 		E10428FB1F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428F11F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m */; };
 		E10428FD1F1AF89C00A02D47 /* SDWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428F51F1AF89C00A02D47 /* SDWebView.m */; };
-		E10429061F1AF8B300A02D47 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10428FF1F1AF8B300A02D47 /* OneViewController.m */; };
-		E10429071F1AF8B300A02D47 /* SDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E10429011F1AF8B300A02D47 /* SDConstant.m */; };
-		E10429081F1AF8B400A02D47 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10429031F1AF8B300A02D47 /* ThreeViewController.m */; };
-		E10429091F1AF8B400A02D47 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10429051F1AF8B300A02D47 /* TwoViewController.m */; };
-		E104290B1F1AF8BD00A02D47 /* source.html in Resources */ = {isa = PBXBuildFile; fileRef = E104290A1F1AF8BD00A02D47 /* source.html */; };
-		E14740641F2EC9900009E04A /* hello1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E14740631F2EC9900009E04A /* hello1.gif */; };
+		E118D1E91F356585007194FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1D41F356585007194FA /* AppDelegate.m */; };
+		E118D1EA1F356585007194FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1D51F356585007194FA /* main.m */; };
+		E118D1EB1F356585007194FA /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1D71F356585007194FA /* OneViewController.m */; };
+		E118D1EC1F356585007194FA /* SDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1D91F356585007194FA /* SDConstant.m */; };
+		E118D1F31F356585007194FA /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1E41F356585007194FA /* ThreeViewController.m */; };
+		E118D1F41F356585007194FA /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1E61F356585007194FA /* TwoViewController.m */; };
+		E118D1F51F356585007194FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118D1E81F356585007194FA /* ViewController.m */; };
+		E118D1FF1F3565B5007194FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E118D1F71F3565B5007194FA /* Assets.xcassets */; };
+		E118D2001F3565B5007194FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E118D1F81F3565B5007194FA /* LaunchScreen.storyboard */; };
+		E118D2011F3565B5007194FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FA1F3565B5007194FA /* Main.storyboard */; };
+		E118D2021F3565B5007194FA /* hello1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FC1F3565B5007194FA /* hello1.gif */; };
+		E118D2031F3565B5007194FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FD1F3565B5007194FA /* Info.plist */; };
+		E118D2041F3565B5007194FA /* source.html in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FE1F3565B5007194FA /* source.html */; };
 		E14740671F2EDA320009E04A /* SDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740661F2EDA320009E04A /* SDRouter.m */; };
 		E147406A1F2EDA930009E04A /* SDRouterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740691F2EDA930009E04A /* SDRouterContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E10428CB1F1AF88900A02D47 /* SDRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10428CF1F1AF88900A02D47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E10428D11F1AF88900A02D47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E10428D21F1AF88900A02D47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E10428D41F1AF88900A02D47 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E10428D51F1AF88900A02D47 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E10428D81F1AF88900A02D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E10428DA1F1AF88900A02D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E10428DD1F1AF88900A02D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E10428DF1F1AF88900A02D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10428E61F1AF89C00A02D47 /* SDRoutorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRoutorUtil.h; sourceTree = "<group>"; };
 		E10428E71F1AF89C00A02D47 /* SDRoutorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRoutorUtil.m; sourceTree = "<group>"; };
 		E10428EC1F1AF89C00A02D47 /* SDUIStackLifeCircleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDUIStackLifeCircleAction.h; sourceTree = "<group>"; };
@@ -49,16 +41,25 @@
 		E10428F11F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+appearSwizzedBlock.m"; sourceTree = "<group>"; };
 		E10428F41F1AF89C00A02D47 /* SDWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebView.h; sourceTree = "<group>"; };
 		E10428F51F1AF89C00A02D47 /* SDWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebView.m; sourceTree = "<group>"; };
-		E10428FE1F1AF8B300A02D47 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
-		E10428FF1F1AF8B300A02D47 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
-		E10429001F1AF8B300A02D47 /* SDConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDConstant.h; sourceTree = "<group>"; };
-		E10429011F1AF8B300A02D47 /* SDConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDConstant.m; sourceTree = "<group>"; };
-		E10429021F1AF8B300A02D47 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
-		E10429031F1AF8B300A02D47 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
-		E10429041F1AF8B300A02D47 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
-		E10429051F1AF8B300A02D47 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
-		E104290A1F1AF8BD00A02D47 /* source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = source.html; sourceTree = "<group>"; };
-		E14740631F2EC9900009E04A /* hello1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello1.gif; sourceTree = "<group>"; };
+		E118D1D31F356585007194FA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E118D1D41F356585007194FA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E118D1D51F356585007194FA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E118D1D61F356585007194FA /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		E118D1D71F356585007194FA /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		E118D1D81F356585007194FA /* SDConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDConstant.h; sourceTree = "<group>"; };
+		E118D1D91F356585007194FA /* SDConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDConstant.m; sourceTree = "<group>"; };
+		E118D1E31F356585007194FA /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		E118D1E41F356585007194FA /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		E118D1E51F356585007194FA /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		E118D1E61F356585007194FA /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		E118D1E71F356585007194FA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E118D1E81F356585007194FA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E118D1F71F3565B5007194FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E118D1F91F3565B5007194FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E118D1FB1F3565B5007194FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E118D1FC1F3565B5007194FA /* hello1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello1.gif; sourceTree = "<group>"; };
+		E118D1FD1F3565B5007194FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E118D1FE1F3565B5007194FA /* source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = source.html; sourceTree = "<group>"; };
 		E14740651F2EDA320009E04A /* SDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRouter.h; sourceTree = "<group>"; };
 		E14740661F2EDA320009E04A /* SDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRouter.m; sourceTree = "<group>"; };
 		E14740681F2EDA930009E04A /* SDRouterContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRouterContext.h; sourceTree = "<group>"; };
@@ -81,7 +82,8 @@
 			children = (
 				E10428E51F1AF89C00A02D47 /* SDRouter */,
 				E10428F21F1AF89C00A02D47 /* SDWebView */,
-				E10428CD1F1AF88900A02D47 /* SDRutorDemo */,
+				E118D1D21F356585007194FA /* SDRouterDemo */,
+				E118D1F61F3565B5007194FA /* SpouttingFiles */,
 				E10428CC1F1AF88900A02D47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,40 +94,6 @@
 				E10428CB1F1AF88900A02D47 /* SDRouter.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E10428CD1F1AF88900A02D47 /* SDRutorDemo */ = {
-			isa = PBXGroup;
-			children = (
-				E10428D11F1AF88900A02D47 /* AppDelegate.h */,
-				E10428D21F1AF88900A02D47 /* AppDelegate.m */,
-				E10428FE1F1AF8B300A02D47 /* OneViewController.h */,
-				E10428FF1F1AF8B300A02D47 /* OneViewController.m */,
-				E10429001F1AF8B300A02D47 /* SDConstant.h */,
-				E10429011F1AF8B300A02D47 /* SDConstant.m */,
-				E10429021F1AF8B300A02D47 /* ThreeViewController.h */,
-				E10429031F1AF8B300A02D47 /* ThreeViewController.m */,
-				E10429041F1AF8B300A02D47 /* TwoViewController.h */,
-				E10429051F1AF8B300A02D47 /* TwoViewController.m */,
-				E10428D41F1AF88900A02D47 /* ViewController.h */,
-				E10428D51F1AF88900A02D47 /* ViewController.m */,
-				E10428D71F1AF88900A02D47 /* Main.storyboard */,
-				E10428DA1F1AF88900A02D47 /* Assets.xcassets */,
-				E10428DC1F1AF88900A02D47 /* LaunchScreen.storyboard */,
-				E10428DF1F1AF88900A02D47 /* Info.plist */,
-				E10428CE1F1AF88900A02D47 /* Supporting Files */,
-			);
-			path = SDRutorDemo;
-			sourceTree = "<group>";
-		};
-		E10428CE1F1AF88900A02D47 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E14740631F2EC9900009E04A /* hello1.gif */,
-				E104290A1F1AF8BD00A02D47 /* source.html */,
-				E10428CF1F1AF88900A02D47 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E10428E51F1AF89C00A02D47 /* SDRouter */ = {
@@ -154,6 +122,39 @@
 				E10428F51F1AF89C00A02D47 /* SDWebView.m */,
 			);
 			path = SDWebView;
+			sourceTree = "<group>";
+		};
+		E118D1D21F356585007194FA /* SDRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E118D1D31F356585007194FA /* AppDelegate.h */,
+				E118D1D41F356585007194FA /* AppDelegate.m */,
+				E118D1D51F356585007194FA /* main.m */,
+				E118D1D61F356585007194FA /* OneViewController.h */,
+				E118D1D71F356585007194FA /* OneViewController.m */,
+				E118D1D81F356585007194FA /* SDConstant.h */,
+				E118D1D91F356585007194FA /* SDConstant.m */,
+				E118D1E31F356585007194FA /* ThreeViewController.h */,
+				E118D1E41F356585007194FA /* ThreeViewController.m */,
+				E118D1E51F356585007194FA /* TwoViewController.h */,
+				E118D1E61F356585007194FA /* TwoViewController.m */,
+				E118D1E71F356585007194FA /* ViewController.h */,
+				E118D1E81F356585007194FA /* ViewController.m */,
+			);
+			path = SDRouterDemo;
+			sourceTree = "<group>";
+		};
+		E118D1F61F3565B5007194FA /* SpouttingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E118D1F71F3565B5007194FA /* Assets.xcassets */,
+				E118D1F81F3565B5007194FA /* LaunchScreen.storyboard */,
+				E118D1FA1F3565B5007194FA /* Main.storyboard */,
+				E118D1FC1F3565B5007194FA /* hello1.gif */,
+				E118D1FD1F3565B5007194FA /* Info.plist */,
+				E118D1FE1F3565B5007194FA /* source.html */,
+			);
+			path = SpouttingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,11 +215,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10428DE1F1AF88900A02D47 /* LaunchScreen.storyboard in Resources */,
-				E10428DB1F1AF88900A02D47 /* Assets.xcassets in Resources */,
-				E14740641F2EC9900009E04A /* hello1.gif in Resources */,
-				E10428D91F1AF88900A02D47 /* Main.storyboard in Resources */,
-				E104290B1F1AF8BD00A02D47 /* source.html in Resources */,
+				E118D2011F3565B5007194FA /* Main.storyboard in Resources */,
+				E118D2041F3565B5007194FA /* source.html in Resources */,
+				E118D1FF1F3565B5007194FA /* Assets.xcassets in Resources */,
+				E118D2001F3565B5007194FA /* LaunchScreen.storyboard in Resources */,
+				E118D2031F3565B5007194FA /* Info.plist in Resources */,
+				E118D2021F3565B5007194FA /* hello1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,19 +231,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10429071F1AF8B300A02D47 /* SDConstant.m in Sources */,
-				E10429081F1AF8B400A02D47 /* ThreeViewController.m in Sources */,
+				E118D1F51F356585007194FA /* ViewController.m in Sources */,
+				E118D1F41F356585007194FA /* TwoViewController.m in Sources */,
 				E10428FD1F1AF89C00A02D47 /* SDWebView.m in Sources */,
-				E10429091F1AF8B400A02D47 /* TwoViewController.m in Sources */,
-				E10428D61F1AF88900A02D47 /* ViewController.m in Sources */,
+				E118D1EC1F356585007194FA /* SDConstant.m in Sources */,
+				E118D1EB1F356585007194FA /* OneViewController.m in Sources */,
+				E118D1F31F356585007194FA /* ThreeViewController.m in Sources */,
 				E10428FB1F1AF89C00A02D47 /* UIViewController+appearSwizzedBlock.m in Sources */,
-				E10429061F1AF8B300A02D47 /* OneViewController.m in Sources */,
 				E10428F91F1AF89C00A02D47 /* SDUIStackLifeCircleAction.m in Sources */,
 				E147406A1F2EDA930009E04A /* SDRouterContext.m in Sources */,
+				E118D1E91F356585007194FA /* AppDelegate.m in Sources */,
 				E14740671F2EDA320009E04A /* SDRouter.m in Sources */,
 				E10428F61F1AF89C00A02D47 /* SDRoutorUtil.m in Sources */,
-				E10428D31F1AF88900A02D47 /* AppDelegate.m in Sources */,
-				E10428D01F1AF88900A02D47 /* main.m in Sources */,
+				E118D1EA1F356585007194FA /* main.m in Sources */,
 				E10428FA1F1AF89C00A02D47 /* SDURLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,20 +251,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E10428D71F1AF88900A02D47 /* Main.storyboard */ = {
+		E118D1F81F3565B5007194FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E10428D81F1AF88900A02D47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E10428DC1F1AF88900A02D47 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E10428DD1F1AF88900A02D47 /* Base */,
+				E118D1F91F3565B5007194FA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E118D1FA1F3565B5007194FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E118D1FB1F3565B5007194FA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SDRutorDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SpouttingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutor;
@@ -376,7 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SDRutorDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SpouttingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutor;
