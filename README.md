@@ -2,7 +2,7 @@
 
 SDRouter use for decoupling.use simple code bridge native to native or H5 to native by AppSchema  with parameter, like this "asone://oneController?url=http://www.baidu.com" SDRouter 可以用来在模块与模块间的解耦及通信，也可以作为H5和原生的交互、跳转、传参。
 
-![image](https://github.com/giveMeHug/SDRutorDemo/blob/master/SDRutorDemo/hello1.gif)
+![image](https://github.com/giveMeHug/SDRouter/blob/master/SpouttingFiles/hello1.gif)
 
 原生跳原生带参数使用（可以参考demo）：
 
