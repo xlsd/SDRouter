@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E10428CA1F1AF88900A02D47"
-               BuildableName = "SDRutorDemo.app"
-               BlueprintName = "SDRutorDemo"
-               ReferencedContainer = "container:SDRutorDemo.xcodeproj">
+               BuildableName = "SDRouter.app"
+               BlueprintName = "SDRouter"
+               ReferencedContainer = "container:SDRouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E10428CA1F1AF88900A02D47"
-            BuildableName = "SDRutorDemo.app"
-            BlueprintName = "SDRutorDemo"
-            ReferencedContainer = "container:SDRutorDemo.xcodeproj">
+            BuildableName = "SDRouter.app"
+            BlueprintName = "SDRouter"
+            ReferencedContainer = "container:SDRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E10428CA1F1AF88900A02D47"
-            BuildableName = "SDRutorDemo.app"
-            BlueprintName = "SDRutorDemo"
-            ReferencedContainer = "container:SDRutorDemo.xcodeproj">
+            BuildableName = "SDRouter.app"
+            BlueprintName = "SDRouter"
+            ReferencedContainer = "container:SDRouter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E10428CA1F1AF88900A02D47"
-            BuildableName = "SDRutorDemo.app"
-            BlueprintName = "SDRutorDemo"
-            ReferencedContainer = "container:SDRutorDemo.xcodeproj">
+            BuildableName = "SDRouter.app"
+            BlueprintName = "SDRouter"
+            ReferencedContainer = "container:SDRouter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

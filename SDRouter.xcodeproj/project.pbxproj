@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E10428CB1F1AF88900A02D47 /* SDRutorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRutorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10428CB1F1AF88900A02D47 /* SDRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10428CF1F1AF88900A02D47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E10428D11F1AF88900A02D47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E10428D21F1AF88900A02D47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		E10428CC1F1AF88900A02D47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E10428CB1F1AF88900A02D47 /* SDRutorDemo.app */,
+				E10428CB1F1AF88900A02D47 /* SDRouter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E10428CA1F1AF88900A02D47 /* SDRutorDemo */ = {
+		E10428CA1F1AF88900A02D47 /* SDRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E10428E21F1AF88900A02D47 /* Build configuration list for PBXNativeTarget "SDRutorDemo" */;
+			buildConfigurationList = E10428E21F1AF88900A02D47 /* Build configuration list for PBXNativeTarget "SDRouter" */;
 			buildPhases = (
 				E10428C71F1AF88900A02D47 /* Sources */,
 				E10428C81F1AF88900A02D47 /* Frameworks */,
@@ -171,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = SDRutorDemo;
+			name = SDRouter;
 			productName = SDRutorDemo;
-			productReference = E10428CB1F1AF88900A02D47 /* SDRutorDemo.app */;
+			productReference = E10428CB1F1AF88900A02D47 /* SDRouter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,12 +187,11 @@
 				TargetAttributes = {
 					E10428CA1F1AF88900A02D47 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Y2U4T79593;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = E10428C61F1AF88900A02D47 /* Build configuration list for PBXProject "SDRutorDemo" */;
+			buildConfigurationList = E10428C61F1AF88900A02D47 /* Build configuration list for PBXProject "SDRouter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E10428CA1F1AF88900A02D47 /* SDRutorDemo */,
+				E10428CA1F1AF88900A02D47 /* SDRouter */,
 			);
 		};
 /* End PBXProject section */
@@ -362,11 +361,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y2U4T79593;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SDRutorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutorDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -376,11 +375,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y2U4T79593;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SDRutorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutorDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asone.SDRutor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -388,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E10428C61F1AF88900A02D47 /* Build configuration list for PBXProject "SDRutorDemo" */ = {
+		E10428C61F1AF88900A02D47 /* Build configuration list for PBXProject "SDRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E10428E01F1AF88900A02D47 /* Debug */,
@@ -397,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E10428E21F1AF88900A02D47 /* Build configuration list for PBXNativeTarget "SDRutorDemo" */ = {
+		E10428E21F1AF88900A02D47 /* Build configuration list for PBXNativeTarget "SDRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E10428E31F1AF88900A02D47 /* Debug */,

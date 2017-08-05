@@ -28,10 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     SDWebView *webView = [[SDWebView alloc] initWithFrame:self.view.bounds];
     [webView loadLocalHTMLWithFileName:@"source"];
-    
     [self.view addSubview:webView];
     webView.urlBlock = ^(NSString *urlString) {
         if ([urlString rangeOfString:AppSchema].location != NSNotFound) {
