@@ -37,5 +37,9 @@ function jump(){
     window.location="asone://threeController?title=as😝three";
 }
 ```
+```
+pod 'SDRouter'
+```
+
 其他说明:
 其实前端不一定非要使用window.location，也可以直接给个url内链跳转也是一样的。这和该库内部实现方式有关，只是上面的脚本更加通用，两种方式的区别，会在[原理篇](http://www.jianshu.com/p/2f81b5fbd919)讲解。
