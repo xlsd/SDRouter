@@ -30,16 +30,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 100, 80)];
-    [button setTitle:@"openUrl" forState:UIControlStateNormal];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 50)];
+    [button setTitle:@"Router OpenUrl" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor whiteColor];
+    button.layer.cornerRadius = 25;
+    button.layer.masksToBounds = YES;
     [button addTarget:self action:@selector(openUrl) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
 }
 
 - (void)openUrl {
-    NSDictionary *dict = @{@"title":@"as_two"};
+    NSDictionary *dict = @{@"title":@"WebPage"};
     NSURL *url = SDURLRouteQueryLink(TwoController, dict);
     [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {}];
 }

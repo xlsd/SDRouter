@@ -31,7 +31,7 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
     label.numberOfLines = 0;
-    label.text = @"🌹🌺我是通过URL连接跳转过来的，标题也是web页面传给我的😝😝😝😝😝😝😝😝😝😝😝😝";
+    label.text = @"这是通过URL连接跳转过来的，标题是Web页面传入的";
     [self.view addSubview:label];
     
 }

@@ -1,28 +1,34 @@
 //
 //  SDWebView.m
-//  YTXEducation
+//  xuelin
 //
-//  Created by 薛林 on 17/2/25.
-//  Copyright © 2017年 YunTianXia. All rights reserved.
+//  Created by xuelin on 17/2/25.
+//  Copyright © 2017年 xuelin. All rights reserved.
 //
 
 #import "SDWebView.h"
 #import <Foundation/Foundation.h>
 
-//static NSString *MEIQIA = @"meiqia";
+@interface SDWebView () {
+    BOOL _displayHTML;  //  显示页面元素
+    BOOL _displayCookies;// 显示页面Cookies
+    BOOL _displayURL;// 显示即将调转的URL
+}
 
-@interface SDWebView ()
+//  交互对象，使用它给页面注入JS代码，给页面图片添加点击事件
 @property (nonatomic, strong) WKUserScript *userScript;
+
 @end
 
 
 @implementation SDWebView {
-    NSString *_imgSrc;
+    NSString *_imgSrc;//  预览图片的URL路径
 }
 
+//  MARK: - init
 - (instancetype)initWithURLString:(NSString *)urlString {
     self = [super init];
-    [self setDefaultValue];
+    self.URLString = urlString;
     return self;
 }
 
@@ -41,7 +47,6 @@
     configer.allowsInlineMediaPlayback = YES;
     [configer.userContentController addUserScript:self.userScript];
     self = [super initWithFrame:frame configuration:configer];
-    [self setDefaultValue];
     return self;
 }
 
@@ -51,14 +56,16 @@
 }
 
 - (void)setDefaultValue {
-    _displayHTML = NO;
+    _displayHTML = YES;
     _displayCookies = NO;
     _displayURL = YES;
     self.UIDelegate = self;
     self.navigationDelegate = self;
+    self.allowsBackForwardNavigationGestures = YES;
     self.scrollView.showsVerticalScrollIndicator = NO;
 }
 
+//  MARK: - 加载本地URL
 - (void)loadLocalHTMLWithFileName:(nonnull NSString *)htmlName {
     
     NSString *path = [[NSBundle mainBundle] bundlePath];
@@ -72,21 +79,22 @@
     [self loadHTMLString:htmlCont baseURL:baseURL];
 }
 
+
 - (void)setJsHandlers:(NSArray<NSString *> *)jsHandlers {
     _jsHandlers = jsHandlers;
-    for (NSString *handlerName in jsHandlers) {
-        [self.configuration.userContentController addScriptMessageHandler:self name:handlerName];
-    }
+    [jsHandlers enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+         [self.configuration.userContentController addScriptMessageHandler:self name:obj];
+    }];
 }
 
-#pragma mark - js调用原生方法 可在此方法中获得传递回来的参数
+//  MARK: - js调用原生方法 可在此方法中获得传递回来的参数
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     if(self.webDelegate !=nil && [self.webDelegate respondsToSelector:@selector(userContentController:didReceiveScriptMessage:)]){
         [self.webDelegate userContentController:userContentController didReceiveScriptMessage:message];
     }
 }
 
-#pragma mark - 检查cookie及页面HTML元素
+//  MARK: - 检查cookie及页面HTML元素
 //页面加载完成后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     //获取图片数组
@@ -95,7 +103,6 @@
         if (_imgSrcArray.count >= 2) {
             [_imgSrcArray removeLastObject];
         }
-        NSLog(@"%@",_imgSrcArray);
     }];
     
     [webView evaluateJavaScript:@"registerImageClickAction();" completionHandler:^(id _Nullable result, NSError * _Nullable error) {}];
@@ -116,24 +123,24 @@
     if (![self.webDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
         return;
     }
-    if(self.webDelegate !=nil ){
+    if([self.webDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]){
         [self.webDelegate webView:webView didFinishNavigation:navigation];
     }
 }
 
-#pragma mark - 页面开始加载就调用
+//  MARK: - 页面开始加载就调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
     if (self.webDelegate != nil && [self.webDelegate respondsToSelector:@selector(webView:didStartProvisionalNavigation:)]) {
         [self.webDelegate webView:webView didStartProvisionalNavigation:navigation];
     }
 }
 
-#pragma mark - 导航每次跳转调用跳转
+//  MARK: - 导航每次跳转调用跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     //预览图片
     if ([navigationAction.request.URL.scheme isEqualToString:@"image-preview"]) {
         NSString* path = [navigationAction.request.URL.absoluteString substringFromIndex:[@"image-preview:" length]];
-        path = [path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        path = [path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         _imgSrc = path;
         [self previewPicture];
     }
@@ -159,7 +166,7 @@
     }
 }
 
-#pragma mark - 进度条
+//  MARK: - 进度条
 - (UIProgressView *)progressView {
     if(!_progressView) {
         _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 0)];
@@ -169,38 +176,42 @@
     }
     return _progressView;
 }
-
-#pragma mark - 清除cookie
+//  MARK: - 清除cookie
 - (void)removeCookies {
-    WKWebsiteDataStore *dateStore = [WKWebsiteDataStore defaultDataStore];
-    [dateStore fetchDataRecordsOfTypes:[WKWebsiteDataStore allWebsiteDataTypes]
-                     completionHandler:^(NSArray<WKWebsiteDataRecord *> * __nonnull records) {
-                         for (WKWebsiteDataRecord *record  in records) {
-                             [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:record.dataTypes
-                                                                       forDataRecords:@[record]
-                                                                    completionHandler:^{
-                                                                        NSLog(@"Cookies for %@ deleted successfully",record.displayName);
-                                                                    }];
-                         }
-                     }];
+    if (@available(iOS 9.0, *)) {
+        WKWebsiteDataStore *dateStore = [WKWebsiteDataStore defaultDataStore];
+        [dateStore fetchDataRecordsOfTypes:[WKWebsiteDataStore allWebsiteDataTypes]
+                         completionHandler:^(NSArray<WKWebsiteDataRecord *> * __nonnull records) {
+                             for (WKWebsiteDataRecord *record  in records) {
+                                 [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:record.dataTypes
+                                                                           forDataRecords:@[record]
+                                                                        completionHandler:^{
+                                                                            NSLog(@"Cookies for %@ deleted successfully",record.displayName);
+                                                                        }];
+                             }
+                         }];
+    }
 }
 
 - (void)removeCookieWithHostName:(NSString *)hostName {
-    WKWebsiteDataStore *dateStore = [WKWebsiteDataStore defaultDataStore];
-    [dateStore fetchDataRecordsOfTypes:[WKWebsiteDataStore allWebsiteDataTypes]
-                     completionHandler:^(NSArray<WKWebsiteDataRecord *> * __nonnull records) {
-                         for (WKWebsiteDataRecord *record  in records) {
-                             if ( [record.displayName containsString:hostName]) {
-                                 [[WKWebsiteDataStore defaultDataStore]removeDataOfTypes:record.dataTypes
-                                                                          forDataRecords:@[record]
-                                                                       completionHandler:^{
-                                                                            NSLog(@"Cookies for %@ deleted successfully",record.displayName);
-                                                                          }];
+    if (@available(iOS 9.0, *)) {
+        WKWebsiteDataStore *dateStore = [WKWebsiteDataStore defaultDataStore];
+        [dateStore fetchDataRecordsOfTypes:[WKWebsiteDataStore allWebsiteDataTypes]
+                         completionHandler:^(NSArray<WKWebsiteDataRecord *> * __nonnull records) {
+                             for (WKWebsiteDataRecord *record  in records) {
+                                 if ( [record.displayName containsString:hostName]) {
+                                     [[WKWebsiteDataStore defaultDataStore]removeDataOfTypes:record.dataTypes
+                                                                              forDataRecords:@[record]
+                                                                           completionHandler:^{
+                                                                                NSLog(@"Cookies for %@ deleted successfully",record.displayName);
+                                                                              }];
+                                 }
                              }
-                         }
-                     }];
+                         }];
+    }
 }
 
+//  MARK: - 调用js方法
 - (void)callJavaScript:(NSString *)jsMethodName {
     [self callJavaScript:jsMethodName handler:nil];
 }
@@ -214,19 +225,38 @@
         }
     }];
 }
+
 - (void)dealloc {
-    [self removeCookies];
+    //  这里清除或者不清除cookies 按照业务要求
+//    [self removeCookies];
 }
 
 // 预览图片
 - (void)previewPicture {
     NSInteger currentIndex = 0;
+    NSMutableArray *items = [NSMutableArray array];
+    NSMutableArray *imageViews = @[].mutableCopy;
+    UIView *fromView = nil;
     for (NSInteger i = 0; i < self.imgSrcArray.count; i++) {
+        UIImageView *imageView = [[UIImageView alloc] init];
+        [self addSubview:imageView];
+        imageView.center = self.center;
+        [imageViews addObject:imageView];
+        
         NSString *path = self.imgSrcArray[i];
+        YYPhotoGroupItem *item = [YYPhotoGroupItem new];
+        item.thumbView = self.superview;
+        NSURL *url = [NSURL URLWithString:self.imgSrcArray[i]];
+        item.thumbView = imageView;
+        item.largeImageURL = url;
+        [items addObject:item];
         if ([path isEqualToString:_imgSrc]) {
             currentIndex = i;
         }
+        fromView = imageViews[currentIndex];
     }
+    YYPhotoBrowseView *groupView = [[YYPhotoBrowseView alloc]initWithGroupItems:items];
+    [groupView presentFromImageView:fromView toContainer:self.superview animated:YES completion:nil];
 }
 
 - (WKUserScript *)userScript {
@@ -252,5 +282,4 @@
     }
     return _userScript;
 }
-
 @end

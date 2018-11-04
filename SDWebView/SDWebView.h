@@ -1,13 +1,13 @@
 //
 //  SDWebView.h
-//  YTXEducation
+//  xuelin
 //
-//  Created by 薛林 on 17/2/25.
-//  Copyright © 2017年 YunTianXia. All rights reserved.
+//  Created by xuelin on 17/2/25.
+//  Copyright © 2017年 xuelin. All rights reserved.
 //
 
 #import <WebKit/WebKit.h>
-
+#import "YYPhotoBrowseView.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^SDWebViewURLBlcok)(NSString *urlString);
 @interface SDWebView : WKWebView<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
@@ -20,46 +20,25 @@ typedef void(^SDWebViewURLBlcok)(NSString *urlString);
 /**
  web页面中的图片链接数组
  */
-@property (nonatomic, strong) NSMutableArray *imgSrcArray;
+@property (nonatomic, strong, readonly) NSMutableArray *imgSrcArray;
+
 /**
  进度条
  */
 @property (strong, nonatomic) UIProgressView *progressView;
 
 /**
- webView的标题、如果navigationItemTitle需要和webView保持一致、直接getter方法即可
- */
-@property (nonatomic, copy) NSString *webViewtitle;
-
-/**
- 注入H5页面的交互模型
+ 注入H5页面的交互模型(可以是多个，也可以是一个)
  */
 @property (nonatomic, strong) NSArray<NSString *> *jsHandlers;
-
-/**
- 是否显示加载的HTML页面源码 default NO
- */
-@property (nonatomic, assign) BOOL displayHTML;
-
-/**
- 是否显示加载的HTML页面中的cookie default NO
- */
-@property (nonatomic, assign) BOOL displayCookies;
-
-/**
- 每次跳转是否需要打印跳转的URL default YES
- */
-@property (nonatomic, assign) BOOL displayURL;
-
 /**
  webView在发生跳转时会会调用
  */
 @property (nonatomic, copy) SDWebViewURLBlcok urlBlock;
-
 /**
  获取交互的参数代理
  */
-@property (nonatomic, assign) id<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler> webDelegate;
+@property (nonatomic, weak) id<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler> webDelegate;
 
 /**
  根据URL初始化
@@ -81,16 +60,16 @@ typedef void(^SDWebViewURLBlcok)(NSString *urlString);
 - (void)removejsHandlers;
 
 /**
- 清除所有cookie
+ 清除所有cookie(>=iOS9.0)
  */
 - (void)removeCookies;
 
 /**
- 清除指定域名中的cookie
+ 清除指定域名中的cookie(>=iOS9.0)
  
- @param cookieName 域名
+ @param hostName 域名
  */
-//- (void)removeCookieWithHostName:(NSString *)hostName;
+- (void)removeCookieWithHostName:(NSString *)hostName;
 
 /**
  *  调用JS方法（无返回值）
@@ -108,5 +87,4 @@ typedef void(^SDWebViewURLBlcok)(NSString *urlString);
 - (void)callJavaScript:(nonnull NSString *)jsMethodName handler:(nullable void(^)(__nullable id response))handler;
 
 @end
-
 NS_ASSUME_NONNULL_END
