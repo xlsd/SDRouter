@@ -22,7 +22,6 @@
 		E118D1FF1F3565B5007194FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E118D1F71F3565B5007194FA /* Assets.xcassets */; };
 		E118D2001F3565B5007194FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E118D1F81F3565B5007194FA /* LaunchScreen.storyboard */; };
 		E118D2011F3565B5007194FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FA1F3565B5007194FA /* Main.storyboard */; };
-		E118D2031F3565B5007194FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FD1F3565B5007194FA /* Info.plist */; };
 		E118D2041F3565B5007194FA /* source.html in Resources */ = {isa = PBXBuildFile; fileRef = E118D1FE1F3565B5007194FA /* source.html */; };
 		E14740671F2EDA320009E04A /* SDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740661F2EDA320009E04A /* SDRouter.m */; };
 		E147406A1F2EDA930009E04A /* SDRouterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E14740691F2EDA930009E04A /* SDRouterContext.m */; };
@@ -394,7 +393,6 @@
 				E118D2041F3565B5007194FA /* source.html in Resources */,
 				E118D1FF1F3565B5007194FA /* Assets.xcassets in Resources */,
 				E118D2001F3565B5007194FA /* LaunchScreen.storyboard in Resources */,
-				E118D2031F3565B5007194FA /* Info.plist in Resources */,
 				E178AC6A218BF2E50058A461 /* WebP.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
