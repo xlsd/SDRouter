@@ -1,6 +1,6 @@
 # SDRouterDemo
 
-### 本库是基于一水流年的模块化设计思想进行的简化版，请看原作者架构阐述。
+### 本库是基于一水流年的模块化设计思想进行的简化版，并添加了Demo，架构阐述请移步原作者架构阐述。
 ### [一水流年DZURLRouter](http://dzpqzb.com/2016/11/08/2016-11-08-dzurlrouter/)
 
 SDRouter use for decoupling.use simple code bridge native to native or H5 to native by AppSchema  with parameter, like this "asone://oneController?url=http://www.baidu.com" SDRouter 可以用来在模块与模块间的解耦及通信，也可以作为H5和原生的交互、跳转、传参。
